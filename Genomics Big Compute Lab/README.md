@@ -72,8 +72,8 @@ In the accompanying Linux script, __"setup-genomics-software.sh"__, genomics sof
 Instructions for using the Microsoft Genomics service (preview) are in the links below. 
 * First, you need to register with the Microsoft Genomics Service - https://malibutest0044.portal.azure-api.net/
 * Install the "msgen" tool on your Linux VM (CentOS)
-    * sudo wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-10.noarch.rpm
-    * sudo rpm -iUvh epel-release-7-10.noarch.rpm
+    * sudo wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
+    * sudo rpm -iUvh epel-release-7-11.noarch.rpm
     * sudo yum -y install python-pip
     * sudo pip install --upgrade --no-deps msgen
     * sudo pip install msgen
