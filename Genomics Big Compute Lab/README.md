@@ -69,16 +69,16 @@ In the accompanying Linux script, __"setup-genomics-software.sh"__, genomics sof
 
 
 ## Microsoft Genomics Service (Preview)
-Instructions for using the Microsoft Genomics service (preview) are in the links below. 
-* First, you need to register with the Microsoft Genomics Service - https://malibutest0044.portal.azure-api.net/
+Instructions for using the Microsoft Genomics service are in the links below. 
+* First, you need to create the Microsoft Genomics Service in the Portal 
 * Install the "msgen" tool on your Linux VM (CentOS)
     * sudo wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-10.noarch.rpm
     * sudo rpm -iUvh epel-release-7-10.noarch.rpm
     * sudo yum -y install python-pip
     * sudo pip install --upgrade --no-deps msgen
     * sudo pip install msgen
-* Check connectivity to the Microsoft Genomics service using the msgen tool
-    * msgen list --api-url-base https://malibutest0044.azure-api.net --subscription-key <API-subscription-key>
+* Check connectivity to the Microsoft Genomics service using the msgen tool (the API subscription key and the Genomics API URL can be found in the Azure Portal)
+    * msgen list --api-url-base <Genomics-API-URL> --subscription-key <API-subscription-key>
 * Install Azure CLI
     * sudo yum check-update; sudo yum install -y gcc python libffi-devel python-devel openssl-devel
     * curl -L https://aka.ms/InstallAzureCli | bash
